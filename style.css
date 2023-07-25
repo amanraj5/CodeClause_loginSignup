@@ -1,0 +1,85 @@
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("./images/ian-dooley-DJ7bWa-Gwks-unsplash.jpg");
+}
+
+.container {
+  width: 300px;
+  padding: 20px;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #045a08;
+}
+
+#signup{
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#signup:hover{
+  background-color: rgb(8, 8, 188);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  background-color: #4285F4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
