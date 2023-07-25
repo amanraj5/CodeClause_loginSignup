@@ -3,11 +3,19 @@
 
 <head>
     <title>SignUp</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
     <div class="container">
+        <div>
+            <p id="success"></p>
+        </div>
+        <div class="btn-container">
+            <a class="btn" href="#" onclick="loginWithGoogle()"><img src="./images/icons-google.png"></img></a>
+            <a class="btn" href="#" onclick="loginWithFacebook()"><img src="./images/icons-facebook.png"></a>
+        </div>
+
         <h2>SignUp</h2>
         <form>
             <div class="form-group">
@@ -24,7 +32,7 @@
             </div>
 
             <button type="submit" id="signup">Create Account</button>
-            
+
         </form>
     </div>
 </body>
@@ -65,8 +73,9 @@
                     name: name,
                     email: email
                 })
-                alert('User created successfully');
-                // ...
+                setTimeout(() => {
+                        document.getElementById('success').innerHTML = "User Created Successfully"
+                    }, 2000)
             })
             .catch((error) => {
                 const errorCode = error.code;
@@ -89,5 +98,5 @@
         }
     });
 </script>
-
+<script src="./script.js"></script>
 </html>

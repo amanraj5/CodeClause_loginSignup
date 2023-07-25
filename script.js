@@ -2,7 +2,7 @@
 function loginWithGoogle() {
     // Replace YOUR_GOOGLE_CLIENT_ID with your actual Google Client ID
     const googleClientId = '691411303149-315fcshv2n7cteau3q48euuvp9t4v923.apps.googleusercontent.com';
-    const redirectUri = 'https://loginSignup.com'; // Must be registered in Google Developer Console
+    const redirectUri = 'https://amanraj5.github.io/CodeClause_loginSignup/'; // Must be registered in Google Developer Console
   
     const url = `https://accounts.google.com/o/oauth2/v2/auth?` +
       `client_id=${googleClientId}&redirect_uri=${redirectUri}` +
